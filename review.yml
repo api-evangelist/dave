@@ -1,0 +1,97 @@
+reviewer: API Evangelist
+date: '2026-07-23'
+slug: dave
+name: Dave
+tier: digital
+segment: 'US consumer neobank / cash-advance fintech (Nasdaq: DAVE)'
+summary: >-
+  Dave is a consumer mobile banking and cash-advance app, not an API producer. There is no
+  first-party public developer program: no developer portal, no published API catalog, no
+  downloadable OpenAPI/Swagger/Postman, and no public SDKs. Programmatic access to Dave-held
+  consumer financial data is aggregator-mediated (open-finance / Plaid), consistent with the
+  US voluntary open-finance landscape where a consumer neobank exposes data to third parties
+  through aggregators rather than a self-serve API.
+developer_portal:
+  present: false
+  probed:
+  - url: https://developer.dave.com
+    status: 000 (no host / not resolvable)
+  - url: https://developers.dave.com
+    status: 000 (no host / not resolvable)
+  - url: https://docs.dave.com
+    status: 000 (no host / not resolvable)
+  - url: https://dev.dave.com
+    status: 000 (no host / not resolvable)
+  finding: No documented first-party developer portal exists.
+api_surface:
+  first_party_public_apis: 0
+  private_backend:
+  - url: https://api.dave.com
+    status: 200
+    detail: >-
+      Responds 200 with body {"ok":true}, server header "x-powered-by: Express". This is the
+      Dave mobile app's private/undocumented backend, not a documented public product. Common
+      spec paths probed and all 404: /openapi.json, /swagger.json, /.well-known/openapi,
+      /swagger/v1/swagger.json, /v1, /health, /docs.
+  finding: No public, documented API product surface to enumerate as apis[] entries.
+downloadable_specs:
+  openapi: false
+  swagger: false
+  postman: false
+  provenance: none — no specs were harvested because none are publicly published.
+auth_model:
+  first_party: none published (no public API to authenticate against)
+  aggregator: >-
+    Consent-based OAuth-style token flows are handled by the aggregator (Plaid), which issues
+    scoped access tokens after user authorization; Dave itself does not document an auth scheme.
+open_finance_posture:
+  model: aggregator-only (US voluntary open finance)
+  aggregators:
+  - name: Plaid
+    role: >-
+      Dave is a documented supported institution on Plaid, and Dave also consumes Plaid to let
+      members link external bank accounts. Plaid is the practical programmatic access path to
+      Dave account data.
+  fdx_participation: not documented / not publicly stated
+  cfpb_1033: no published 1033 data-access posture or dedicated data-rights API
+  akoya_mx_finicity: not documented as a first-party direct-access publisher
+github:
+  org: https://github.com/dave-inc
+  verified: true
+  detail: >-
+    Real, domain-verified Dave Inc org (~25 repos, most archived). Contents are internal
+    infra/tooling and forks (helm charts, apple-pay-decrypt, rrule, paddl); no public API
+    client libraries, SDKs, or API definitions.
+link_surface_verified:
+  - type: Website
+    url: https://dave.com
+    status: 200
+  - type: Blog
+    url: https://dave.com/blog
+    status: 200
+  - type: Pricing
+    url: https://dave.com/no-hidden-fees
+    status: 200
+  - type: TermsOfService
+    url: https://dave.com/terms-and-agreements
+    status: 200
+  - type: PrivacyPolicy
+    url: https://dave.com/privacy
+    status: 200
+  - type: Support
+    url: https://support.dave.com/hc/en-us
+    status: 403 (live Zendesk help center; bot-blocked to automated probe)
+  - type: GitHubOrganization
+    url: https://github.com/dave-inc
+    status: 200
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/dave-inc
+    status: 999 (LinkedIn bot-block; page is real)
+  - type: StatusPage
+    url: https://status.dave.com
+    status: 000 (no public status page found)
+conclusion: >-
+  Honest representation retained: Dave is profiled as a company with zero first-party public
+  APIs. No apis[] entries were fabricated and no specs were invented. The deepening here is the
+  verified aggregator-only open-finance posture, the confirmed private-backend vs. developer-portal
+  distinction, and the verified identity/link surface (GitHub org and LinkedIn added).
