@@ -14,6 +14,8 @@ description: 'Dave is a U.S. consumer financial-technology company (Nasdaq: DAVE
   open-finance aggregators. This profile captures its public identity, aggregator-only open-finance
   posture, commercial link surface, and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/dave/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
