@@ -56,7 +56,7 @@ tags:
 - Neobank
 - Personal Finance
 - Cash Advance
-- Financial-Services
+- Financial Services
 - Mobile Banking
 - United States
 - Open Finance
@@ -75,6 +75,7 @@ tags_raw:
 - Open Finance
 - Aggregator Access
 - Plaid
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
