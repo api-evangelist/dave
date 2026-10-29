@@ -64,6 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Dave is a company surfaced as a portfolio company of norwest-venture-partners and added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting the enrichment pipeline.
+Dave is a U.S. consumer financial-technology company (Nasdaq: DAVE), founded in 2016 and headquartered in Los Angeles, that operates a mobile banking app serving roughly 14 million members. Its products include ExtraCash short-term cash advances of up to $500 (underwritten with its CashAI cash-flow model rather than credit scores), an FDIC-insured Dave Checking account with early direct deposit and Round-Up savings, and a Goals savings account. Banking services are provided through partner banks such as Coastal Community Bank. Dave is a consumer app and does not publish a first-party public developer API, SDKs, or a developer portal: there is no developer.dave.com / docs.dave.com, and api.dave.com is the app's private, undocumented mobile backend. Programmatic access to Dave-held consumer data is aggregator-mediated — Dave both consumes Plaid (to let members link external accounts) and is reachable as a supported institution through open-finance aggregators. This profile captures its public identity, aggregator-only open-finance posture, commercial link surface, and domain-security posture.
 
-Backed by: norwest-venture-partners — https://dave.com
+**Areas:** Company · Fintech · Banking · Neobank · Personal Finance · Cash Advance · Financial Services · Mobile Banking · United States · Open Finance · Aggregator Access · Plaid
+
+## Dave on APIs.io
+
+Everything profiled for Dave is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/dave/](https://apis.io/providers/dave/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Dave Domain Security](https://apis.io/security/dave/dave-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://dave.com)
+- [Pricing](https://dave.com/no-hidden-fees)
+- [Support](https://support.dave.com/hc/en-us)
+- [Blog](https://dave.com/blog)
+- [Terms of service](https://dave.com/terms-and-agreements)
+- [Privacy policy](https://dave.com/privacy)
+- [GitHub](https://github.com/dave-inc)
+
+## API Evangelist rating
+
+**Kin Score 14.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 44.7 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/dave/](https://apis.io/providers/dave/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Dave: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/dave/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
